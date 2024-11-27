@@ -1,0 +1,65 @@
+/* Logo Image */
+.logo-image {
+  height: 40px;
+  width: 100px;
+}
+
+/* Body */
+body {
+  padding-top: 70px; /* Adjust the padding value according to the height of your navbar */
+}
+
+/* Text Size */
+.text-size {
+  font-size: 0.8rem; /* Adjust as needed for your desired size */
+}
+
+/* Navbar Dropdown Menu */
+.dropdown-menu {
+  border: 1px solid #f5f5dc;
+  width: 100%;
+}
+
+/* Form Fields */
+.form-floating label {
+  font-size: 0.9rem;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #a8a8a8; /* Custom focus color */
+  box-shadow: 0 0 5px rgba(65, 65, 65, 0.3);
+}
+
+/* Message */
+#message {
+  font-size: 0.9rem;
+  color: #28a745;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer Logo */
+.logo-footer {
+  width: 100px;
+  filter: brightness(0) contrast(100%);
+}
+
+/* Footer */
+.footer {
+  background-color: #d4d4d4; /* Light gray background */
+  width: 100%; /* Full width of the page */
+  padding: 20px 0; /* Add top and bottom padding */
+  position: relative; /* Ensure footer stays in place */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+}

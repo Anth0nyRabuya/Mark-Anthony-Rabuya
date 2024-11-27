@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/logo only.png">
+    <link rel="stylesheet" href="/ekh/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Eco Kalikasan Hub</title>
+    <style>
+        /**/
+        .card-body {
+          display: flex; 
+          flex-direction: column; 
+          justify-content: center; 
+          height: 100%; 
+      }
+
+        .card-images {
+          width: 1000px;
+          height: 400px;
+        }
+
+      .card {
+        height: 100%; 
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s;
+      }
+
+
+      .card:hover {
+          transform: translateY(-5px);
+      }
+
+      .card-img-top {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 200px; 
+          object-fit: contain; 
+      }
+
+      .card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #333;
+      }
+
+      .card-text {
+          font-size: 1rem;
+          color: #555;
+      }
+
+      .bg-color {
+        background-color: #e7e7e7;
+      }
+
+
+      /*help*/
+      .img-size {
+        width: 150px; 
+        height: 150px; 
+        object-fit: contain;
+    }
+
+/*overview*/
+            .image-container {
+            position: relative;
+        }
+        .image-container img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 400px; 
+            object-fit: cover; 
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            font-size: 40px; 
+            color: rgb(255, 255, 255); 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+        }
+        .logo-image {
+          height: 40px; 
+          width: 100px;
+       }
+
+       .logo-footer {
+        width: 100px;
+        filter: brightness(0) contrast(100%);
+     }
+
+
+     .footer {
+       background-color: #d4d4d4; 
+       width: 100%; 
+       padding: 20px 0; 
+       position: relative; 
+       left: 0; 
+       right: 0; 
+     }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <a class="navbar-brand mx-auto" href="index.html">
+      <img src="img/logo.png" class="img-fluid logo-image" alt="Eco Kalikasan Hub Logo">
+    </a>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+        <li class="nav-item">
+          <a class="nav-link" href="about us.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Work
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="climate & energy.html">Climate & Energy</a></li>
+            <li><a class="dropdown-item" href="forest.html">Forest</a></li>
+            <li><a class="dropdown-item" href="oceans.html">Oceans</a></li>
+            <li><a class="dropdown-item" href="clean environment.html">Environment</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Get Involved
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="volunteer with us.html">Volunteer with Us</a></li>
+            <li><a class="dropdown-item" href="member.html">Become a Member</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Updates
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="news.html">News</a></li>
+            <li><a class="dropdown-item" href="annual reports.html">Annual Reports</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--Overview-->
+<div class="container py-4">
+  <div class="card mb-3">
+      <div class="image-container">
+          <img src="https://www.business-to-you.com/wp-content/uploads/2016/09/Business-Environment.jpg" class="card-img-top" alt="Climate Change">
+          <div class="overlay-text">Environment</div>
+      </div>
+      <div class="card-body">
+          <h2 class="card-title text-center">Overview</h2>
+          <p class="card-text">For healthy living clean environment is the key base that helps to prevent unwanted health issues and other health-related problems. Living in a polluted environment brings more toxins that harm human health.
+             Pollution in your living environment also causes respiratory problems and skin allergies. Everyone likes to live in a clean environment, and no one denies the advantages of living in a healthy and clean environment due to the benefits of having clean environment.
+              Not only for homes, having a clean environment is mandatory for industries to generate more business. The ones who understand the benefits of having a clean environment will maintain a healthy environment at their homes, offices, industries, public places,
+               and promote the essence of a clean environment for others.</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!--2nd Page-->
+
+<div class="container text-center">
+  <div class="row">
+    <!--1st col-->
+    <div class="col">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910199.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">7 million</h5>
+          <p class="card-text"><small>premature deaths annually worldwide are caused by air pollution (WHO).</small></p>
+        </div>
+      </div>
+    </div>
+    <!--2nd col-->
+    <div class="col">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2581/2581660.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2.2 billion</h5>
+          <p class="card-text"><small>people globally lack access to safely managed drinking water (WHO), </small></p>
+        </div>
+      </div>
+    </div>
+    <!--3rd col-->
+    <div class="col">
+      <div class="card">
+        <img src="https://png.pngtree.com/png-clipart/20230522/original/pngtree-save-the-earth-from-plastic-waste-png-image_9167851.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">8 million</h5>
+          <p class="card-text"><small>Tons of plastic waste enter the oceans every year, harming marine life.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--3rd page-->
+
+<div class="container py-5">
+  <!-- Card with image on the left -->
+  <div class="card mb-3">
+      <div class="row g-0">
+          <div class="col-md-7">
+              <img src="https://www.sgiphilippines.org/images/2021/nhrg2-environmental.png" class="img-fluid card-images" alt="...">
+          </div>
+          <div class="col-md-5">
+              <div class="card-body">
+                  <h5 class="card-title">Environmental Problems</h5>
+                  <p class="card-text">    One of the biggest issues is air pollution. Air pollution comes from sources like factories, cars, and deforestation. This leads to poor air quality, which causes respiratory diseases and heart problems.
+                    Another major problem is water pollution. This makes it unsafe to drink and harms aquatic life. 2.2 billion people around the world still do not have access to clean drinking water, which can lead to the spread of diseases.
+                    </p>
+                    <p class="card-text">  Finally, plastic pollution is a growing problem. Every year, about 8 million tons of plastic waste end up in the oceans, harming marine life and polluting the environment. Even though plastic can be recycled, only about 9% of it is actually recycled, meaning most of it ends up in landfills or the ocean.
+  
+                      These problems highlight the urgent need for cleaner practices, better waste management, and more action to protect our planet. Taking steps to reduce pollution and conserve resources can help create a cleaner, healthier environment for everyone.
+                    </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Card with image on the right -->
+  <div class="card mb-3 mt-5">
+      <div class="row g-0">
+          <div class="col-md-5">
+              <div class="card-body">
+                  <h5 class="card-title">Solutions for a Cleaner Environment</h5>
+                  <p class="card-text">To address environmental problems such as air pollution, water contamination, and plastic waste, a combination of government action and individual responsibility is essential.
+                     For air pollution, shifting to renewable energy sources like solar and wind, alongside stricter regulations on industrial emissions and vehicle standards, can significantly reduce harmful pollutants. Governments must invest in infrastructure to provide access to safe drinking water, while individuals can reduce their chemical use and waste.
+                  </p>
+                  <p class="card-text">Tackling plastic pollution requires reducing single-use plastics and promoting reusable alternatives. Governments should enforce policies to limit plastic production,
+                       By working together—through both policy changes and personal actions—we can make meaningful progress in creating a cleaner and healthier environment for future generations.
+                  </p>
+              </div>
+          </div>
+          <div class="col-md-7">
+              <img src="https://tridentenviro.com/~ukndgqmy/trident/wp-content/uploads/2016/01/trident-environmental-1.jpg" class="img-fluid card-images" alt="...">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="container text-center bg-color">
+  <div class="p-2"> 
+    <h2>How you can help</h2>
+    <p>Join us in the journey towards climate justice by taking simple actions such as signing petitions, and joining climate campaigns. Together, we can create a ripple of change that will positively impact future generations.</p>
+  </div>
+</div>
+
+
+
+
+<!--How can you help-->
+<div class="mt-1">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://st.depositphotos.com/30406010/54926/v/450/depositphotos_549260424-stock-illustration-reducing-co2-emissions-stop-climate.jpg" alt="Protecting Our Climate" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Reducing Air Pollution</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://img.freepik.com/premium-vector/water-quality-icon-vector-image-can-be-used-water-treatment_120816-368844.jpg" alt="Saving Our Oceans" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Improving Water Quality</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="">
+                <img src="https://png.pngtree.com/png-vector/20220607/ourmid/pngtree-warning-sign-stop-plastic-waste-isolated-on-white-background-png-image_4857449.png" alt="Ending Plastic Pollution" class="img-size card-img-top mx-auto d-block rounded-circle">
+                <div class="card-body">
+                    <h5 class="card-title text-size m-0"></h5>
+                    <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Reducing Plastic Pollution</a>
+                </div>
+            </div>
+        </div>
+
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://thumbs.dreamstime.com/b/service-offer-community-minimal-icon-vector-illustration-119500730.jpg" alt="Co-powering Communities" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Community Involvement</a>
+                  </div>
+              </div>
+          </div>
+      </div>        
+  </div>
+</div><br>
+
+
+
+
+
+<!-- Sign UP -->
+<div class="container-sm py-5">
+  <div class="card shadow-sm rounded p-3"> <!-- Adjusted padding for the card -->
+      <h4 class="text-center mb-1">Together we are making change</h4>
+      <p class="text-center text-muted mb-2">
+        Sign up for campaign update and action alerts
+      </p>
+      <form id="subscribeForm">
+        <div class="row gx-2">
+          <div class="col-12 col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-sm" id="fname" placeholder="Enter first name" required>
+              <label for="fname">First Name</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-sm" id="lname" placeholder="Enter last name" required>
+              <label for="lname">Last Name</label>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <div class="form-floating">
+              <input type="email" class="form-control form-control-sm" id="email" placeholder="name@gmail.com" required>
+              <label for="email">Email (Gmail only)</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="w-100 btn-sm py-2">Subscribe</button>
+          </div>
+        </div>
+      </form>
+      <div id="message" class="mt-3 text-center"></div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer text-dark text-center">
+  <div class="container py-3">
+      <div class="row">
+          <!-- Company Column -->
+          <div class="col-md-4">
+              <h6>ECO KALIKASAN HUB</h6>
+              <div class="logo-container">
+                <img src="img/logo only.png" alt="Flood" class="img-fluid rounded logo-footer">
+            </div>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="col-md-4">
+              <h6>CONTACT</h6>
+              <ul class="list-unstyled">
+                  <li><i class="fas fa-home mr-"></i> Ilocos Sur</li>
+                  <li><i class="fas fa-envelope mr-2"></i> ekh@member.com</li>
+                  <li><i class="fas fa-phone mr-2"></i> + 0955 163 5955</li>
+
+              </ul>
+          </div>
+
+          <!-- Social Icons Section -->
+          <div class="col-md-4">
+            <h6>SOCIAL</h6>
+            <ul class="list-unstyled">
+                <li><i class="fab fa-facebook-f mr-2"></i> Facebook</li>
+                <li><i class="fab fa-google mr-2"></i> Google</li>
+                <li><i class="fab fa-instagram mr-2"></i> Instagram</li>
+                <li><i class="fab fa-twitter mr-2"></i> Twitter</li>
+            </ul>
+        </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

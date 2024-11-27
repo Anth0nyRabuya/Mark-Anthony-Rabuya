@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/logo only.png">
+    <link rel="stylesheet" href="/ekh/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Eco Kalikasan Hub</title>
+    <style>
+        /**/
+
+      .card-body {
+          display: flex;
+          flex-direction: column;  
+          justify-content: center; 
+          height: 100%; 
+      }
+
+        .card-images {
+          width: 1000px;
+          height: 400px;
+        }
+
+      .card {
+        height: 100%; 
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s;
+      }
+
+
+
+      .card:hover {
+          transform: translateY(-5px);
+      }
+
+      .card-img-top {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 200px; 
+          object-fit: cover; 
+      }
+
+      .card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #333;
+      }
+
+      .card-text {
+          font-size: 1rem;
+          color: #555;
+      }
+
+      .bg-color {
+        background-color: #e7e7e7;
+      }
+
+
+      /*help*/
+      .img-size {
+        width: 150px; 
+        height: 150px; 
+        object-fit: contain;
+    }
+
+/*overview*/
+            .image-container {
+            position: relative;
+        }
+        .image-container img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 400px; 
+            object-fit: cover; 
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+        }
+        .logo-image {
+          height: 40px; 
+          width: 100px;
+       }
+       .logo-footer {
+        width: 100px;
+        filter: brightness(0) contrast(100%);
+      }
+      
+      
+      .footer {
+       background-color: #d4d4d4; 
+       width: 100%;
+       padding: 20px 0; 
+       position: relative; 
+       left: 0; 
+       right: 0; 
+      }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a class="navbar-brand mx-auto" href="index.html">
+      <img src="img/logo.png" class="img-fluid logo-image" alt="Eco Kalikasan Hub Logo">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+        <li class="nav-item">
+          <a class="nav-link" href="about us.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Work
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="climate & energy.html">Climate & Energy</a></li>
+            <li><a class="dropdown-item" href="forest.html">Forest</a></li>
+            <li><a class="dropdown-item" href="oceans.html">Oceans</a></li>
+            <li><a class="dropdown-item" href="clean environment.html">Environment</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Get Involved
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="volunteer with us.html">Volunteer with Us</a></li>
+            <li><a class="dropdown-item" href="member.html">Become a Member</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Updates
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="news.html">News</a></li>
+            <li><a class="dropdown-item" href="annual reports.html">Annual Reports</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Search Form aligned to the right -->
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--Overview-->
+<div class="container py-5">
+  <div class="card mb-3">
+      <div class="image-container">
+          <img src="https://www.enr.com/ext/resources/Issues/National_Issues/2018/10-October/29-Oct/ViewpointBillWGettyImages-174525514_ENRwebready.jpg?1540410516" class="card-img-top" alt="Climate Change">
+          <div class="overlay-text">Climate Change</div>
+      </div>
+      <div class="card-body">
+          <h2 class="card-title text-center">Overview</h2>
+          <p class="card-text">Climate change is the major environmental challenge of our time, and we know we must accelerate our efforts to adapt to the impacts that are already unavoidable.
+              We have the technologies and the ingenuity to dramatically lower the emissions that are causing the crisis. A growing number of feasible and effective solutions exist here and now.
+              We must propel them forward, and work toward a future that is more sustainable and just. Toward this end, we work in the United States, China, India, and other countries with communities,
+              allies, and decision makers at every level of government to advance policies that will yield deep cuts to carbon pollution, end our dependence on dangerous fossil fuels,
+              and prioritize the people and ecosystems on the frontlines of our changing climate.</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!--2nd Page-->
+
+<div class="container text-center">
+  <div class="row">
+      <!--1st col-->
+      <div class="col">
+          <div class="card">
+              <img src="https://cdn1.iconfinder.com/data/icons/weather-and-disaster-flat/340/flood_water_house_disaster_damage_weather_hurricane_rain-512.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">80b</h5>
+                  <p class="card-text"><small>pesos in damages from the 2024 tropical cyclone season  to the  financial losses </small></p>
+              </div>
+          </div>
+      </div>
+      <!--2nd col-->
+      <div class="col">
+          <div class="card">
+              <img src="https://media.istockphoto.com/id/1408745044/vector/heatwave-in-the-city-concept.jpg?s=612x612&w=0&k=20&c=WfNMZvSGlMHO5aHi3Jqea_KMA-YQN6jxfTiQ3GinroY=" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">1b+</h5>
+                  <p class="card-text"><small>estimated number of people globally who will be exposed to extreme heat stress </small></p>
+              </div>
+          </div>
+      </div>
+      <!--3rd col-->
+      <div class="col">
+          <div class="card">
+              <img src="https://thumbs.dreamstime.com/b/against-desolate-background-oil-fields-vibrant-flare-burning-gas-draws-eye-emphasizes-constant-319040361.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">25%</h5>
+                  <p class="card-text"><small>percentage caused by the burning of coal, oil, and natural gas to produce electricity and heat.</small></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--3rd page-->
+
+<div class="container py-5">
+  <!-- Card with image on the left -->
+  <div class="card mb-3">
+      <div class="row g-0">
+          <div class="col-md-7">
+              <img src="https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/2022-03/PHOTO-Climate-Collage-Diagonal-Design-NOAA-Communications-NO-NOAA-Logo.jpg" class="img-fluid card-images" alt="...">
+          </div>
+          <div class="col-md-5">
+              <div class="card-body">
+                  <h5 class="card-title">The problem of climate change</h5>
+                  <p class="card-text">Our climate is collapsing. Climate change and global warming used to be things we only read about, abstract problems too far off in the future to worry about.
+                     Now, it’s something that’s felt intensely, especially here in the Philippines. We see it with every passing year—each summer is hotter than the last, stronger typhoons are ravaging our islands,
+                      and the intervals between extreme weather events are getting shorter.</p>
+                    <p class="card-text">This has led to immense losses in human life and biodiversity, as well as structural damage to not just public and private infrastructure but also to our natural heritage.
+                       And sadly, the most affected are the marginalized communities who are the least able to cope with floods, storm surges, rising sea levels, among other climate impacts.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card with image on the right -->
+  <div class="card mb-3 mt-5">
+      <div class="row g-0">
+          <div class="col-md-5">
+              <div class="card-body">
+                  <h5 class="card-title">The solutions for a climate-resilient future</h5>
+                  <p class="card-text">Our mission is to not just make people aware of how we can protect our environment but also empower and bring together fellow climate warriors to make our goal of a sustainable and climate-resilient future a reality.</p>
+                  <p class="card-text">Some of the areas Eko Kalikasan Hub has been focusing on to address the climate crisis include: advocating for climate justice through petitions and working with local communities to hold fossil fuel companies accountable by making them pay for the damage they have caused;
+                     pushing for more awareness and a just transition to renewable energy such as solar and wind energy; and strengthening our climate resilience efforts with the help of LGUs and communities to ensure that they are not only prepared for climate emergencies but are also given reparations for previous damages.</p>
+              </div>
+          </div>
+          <div class="col-md-7">
+              <img src="https://media.lasvegasweekly.com/img/photos/2023/08/23/Cooling_Down_photo_illo_t1000.png?c76bf34eada957f64a0b14990027a576ff9bf379" class="img-fluid card-images" alt="...">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container text-center bg-color">
+  <div class="p-2"> <!-- bg-light sets a light background color, p-4 adds padding -->
+    <h2>How you can help</h2>
+    <p>Join us in the journey towards climate justice by taking simple actions such as signing petitions, and joining climate campaigns. Together, we can create a ripple of change that will positively impact future generations.</p>
+  </div>
+</div>
+
+
+
+
+<!--How can you help-->
+<div class="mt-1">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://previews.123rf.com/images/seamartini/seamartini1710/seamartini171000137/87837633-green-leaf-sung-and-lamp-save-energy-vector-icon.jpg" alt="Protecting Our Climate" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Reduce Energy Consumption</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://cdn-icons-png.flaticon.com/512/11289/11289433.png" alt="Saving Our Oceans" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Educate and Advocate</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="">
+                <img src="https://img.freepik.com/premium-vector/sustainable-transportation-concept-man-bicycle-nature-young-guy-with-eco-friendly-transport_118813-26741.jpg?w=360" alt="Ending Plastic Pollution" class="img-size card-img-top mx-auto d-block rounded-circle">
+                <div class="card-body">
+                    <h5 class="card-title text-size m-0"></h5>
+                    <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Transportation Choices</a>
+                </div>
+            </div>
+        </div>
+
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnHVdrpPl6GYrspbvEPLbnsSyVbrM3kifZA&s" alt="Co-powering Communities" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Support Sustainable Practices</a>
+                  </div>
+              </div>
+          </div>
+      </div>        
+  </div>
+</div>
+
+
+
+
+
+<!-- Sign UP -->
+<div class="container-sm py-5">
+  <div class="card shadow-sm rounded p-3"> <!-- Adjusted padding for the card -->
+      <h4 class="text-center mb-1">Together we are making change</h4>
+      <p class="text-center text-muted mb-2">
+        Sign up for campaign update and action alerts
+      </p>
+      <form id="subscribeForm">
+        <div class="row gx-2">
+          <div class="col-12 col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-sm" id="fname" placeholder="Enter first name" required>
+              <label for="fname">First Name</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-sm" id="lname" placeholder="Enter last name" required>
+              <label for="lname">Last Name</label>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <div class="form-floating">
+              <input type="email" class="form-control form-control-sm" id="email" placeholder="name@gmail.com" required>
+              <label for="email">Email (Gmail only)</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="w-100 btn-sm py-2">Subscribe</button>
+          </div>
+        </div>
+      </form>
+      <div id="message" class="mt-3 text-center"></div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer text-dark text-center">
+  <div class="container py-3">
+      <div class="row">
+          <!-- Company Column -->
+          <div class="col-md-4">
+              <h6>ECO KALIKASAN HUB</h6>
+              <div class="logo-container">
+                <img src="img/logo only.png" alt="Flood" class="img-fluid rounded logo-footer">
+            </div>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="col-md-4">
+              <h6>CONTACT</h6>
+              <ul class="list-unstyled">
+                  <li><i class="fas fa-home mr-"></i> Ilocos Sur</li>
+                  <li><i class="fas fa-envelope mr-2"></i> ekh@member.com</li>
+                  <li><i class="fas fa-phone mr-2"></i> + 0955 163 5955</li>
+
+              </ul>
+          </div>
+
+          <!-- Social Icons Section -->
+          <div class="col-md-4">
+            <h6>SOCIAL</h6>
+            <ul class="list-unstyled">
+                <li><i class="fab fa-facebook-f mr-2"></i> Facebook</li>
+                <li><i class="fab fa-google mr-2"></i> Google</li>
+                <li><i class="fab fa-instagram mr-2"></i> Instagram</li>
+                <li><i class="fab fa-twitter mr-2"></i> Twitter</li>
+            </ul>
+        </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

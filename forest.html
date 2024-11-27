@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/logo only.png">
+    <link rel="stylesheet" href="/ekh/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Eco Kalikasan Hub</title>
+    <style>
+        /**/
+
+      
+      .card-body {
+          display: flex; 
+          flex-direction: column;
+          justify-content: center; 
+          height: 100%; 
+      }
+
+        .card-images {
+          width: 1000px;
+          height: 400px;
+        }
+
+      .card {
+        height: 100%;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s;
+      }
+
+      .card:hover {
+          transform: translateY(-5px);
+      }
+
+      .card-img-top {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 200px; 
+          object-fit: contain; 
+      }
+
+      .card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #333;
+      }
+
+      .card-text {
+          font-size: 1rem;
+          color: #555;
+      }
+
+      .bg-color {
+        background-color: #e7e7e7;
+      }
+
+
+      /*help*/
+      .img-size {
+        width: 150px; 
+        height: 150px; 
+        object-fit: cover;
+    }
+
+/*overview*/
+            .image-container {
+            position: relative;
+        }
+        .image-container img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 400px;
+            object-fit: cover; 
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            font-size: 40px;
+            color: rgb(255, 255, 255); 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+        }
+        .logo-image {
+          height: 40px; 
+          width: 100px;
+       }
+
+       
+      .logo-footer {
+        width: 100px;
+        filter: brightness(0) contrast(100%);
+     }
+
+
+     .footer {
+       background-color: #d4d4d4; 
+       width: 100%; 
+       padding: 20px 0;
+       position: relative; 
+       left: 0; 
+       right: 0; 
+     }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <!-- Navbar Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Logo centered -->
+    <a class="navbar-brand mx-auto" href="index.html">
+      <img src="img/logo.png" class="img-fluid logo-image" alt="Eco Kalikasan Hub Logo">
+    </a>
+
+    <!-- Navbar links and search aligned to the right -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Center the navbar items -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+        <li class="nav-item">
+          <a class="nav-link" href="about us.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Work
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="climate & energy.html">Climate & Energy</a></li>
+            <li><a class="dropdown-item" href="forest.html">Forest</a></li>
+            <li><a class="dropdown-item" href="oceans.html">Oceans</a></li>
+            <li><a class="dropdown-item" href="clean environment.html">Environment</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Get Involved
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="volunteer with us.html">Volunteer with Us</a></li>
+            <li><a class="dropdown-item" href="member.html">Become a Member</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Updates
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="news.html">News</a></li>
+            <li><a class="dropdown-item" href="annual reports.html">Annual Reports</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Search Form aligned to the right -->
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--Overview-->
+<div class="container py-5">
+  <div class="card mb-3">
+      <div class="image-container">
+          <img src="https://onetreeplanted.org/cdn/shop/articles/Forest_Fog_1600x.jpg?v=1682535224" class="card-img-top" alt="Climate Change">
+          <div class="overlay-text">Forest</div>
+      </div>
+      <div class="card-body">
+          <h2 class="card-title text-center">Overview</h2>
+          <p class="card-text">Forests are home to some of our planet’s most extraordinary plants and creatures. As natural carbon sinks, storing carbon in soil and trees as they grow, they are also essential in the fight against climate change.
+            But our forests are under threat from deforestation and increasingly frequent, destructive activities that threaten the capacity of forests to sustain us. When trees are cut down, burned, or both, any carbon stores is released into the atmosphere, worsening the climate emergency.</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!--2nd Page-->
+
+<div class="container text-center">
+  <div class="row">
+      <!--1st col-->
+      <div class="col">
+          <div class="card">
+              <img src="https://thumbs.dreamstime.com/b/ecosystem-biodiversity-concept-different-forest-habitats-carnivore-animals-birds-wild-environment-nature-wildlife-fauna-245903122.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">80%</h5>
+                  <p class="card-text"><small>of the world’s land biodiversity has made forests their home</small></p>
+              </div>
+          </div>
+      </div>
+      <!--2nd col-->
+      <div class="col">
+          <div class="card">
+              <img src="https://img.freepik.com/premium-vector/people-tree-cutting-timber-with-truck-tools-forest-flat-cartoon-illustration_2175-8232.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">1. 42 mil ha</h5>
+                  <p class="card-text"><small>of forest cover reduction is a significant environmental issue</small></p>
+              </div>
+          </div>
+      </div>
+      <!--3rd col-->
+      <div class="col">
+          <div class="card">
+              <img src="https://media.istockphoto.com/id/1436428973/vector/deforestation-earth-design-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=9uFi-CRt9BxhIUeX87fUuXL-3glO9MIp0UGHUcVnW8U=" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">56%</h5>
+                  <p class="card-text"><small>of all tree cover loss in the Philippines between 2001 and 2024</small></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--3rd page-->
+
+<div class="container mt-5">
+  <!-- Card with image on the left -->
+  <div class="card mb-3">
+      <div class="row g-0">
+          <div class="col-md-7">
+              <img src="https://cdn.greenmatch.co.uk/cdn-cgi/image/format=auto/2/2024/02/Is-Deforestation-Bad-for-the-Environment_Hero.png" class="img-fluid card-images" alt="...">
+          </div>
+          <div class="col-md-5">
+              <div class="card-body">
+                  <h5 class="card-title">The Problem of Forest</h5>
+                  <p class="card-text">Forests are essential ecosystems that provide numerous benefits, including clean air, habitat for wildlife, and resources for human communities. However, they face significant threats that jeopardize their health and existence.
+                    Deforestation, driven by agriculture, logging, and urbanization, leads to the loss of biodiversity and disrupts the balance of these ecosystems causing shifts in temperature and precipitation patterns that make forests more vulnerable to pests, diseases, and wildfires.</p>
+                    <p class="card-text">Moreover, overexploitation of forest resources, such as timber and fuelwood, leads to unsustainable harvesting practices that degrade the environment.These interconnected issues highlight the urgent need for sustainable forest management and conservation efforts. Protecting forests is not only vital for maintaining biodiversity but
+                       also for ensuring the well-being of future generations.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+  <!-- Card with image on the right -->
+  <div class="card mb-3 mt-5">
+      <div class="row g-0">
+          <div class="col-md-5">
+              <div class="card-body">
+                  <h5 class="card-title">Solutions</h5>
+                  <p class="card-text"> To address the pressing problems facing forests, a multifaceted approach is necessary, combining sustainable practices, policy changes, and community involvement. One effective solution is the implementation of sustainable forestry practices,
+                     which ensure that trees are harvested at a rate that allows for natural regeneration. By promoting sustainable practices, we can balance the need for resources with the preservation of forest ecosystems.</p>
+                  <p class="card-text">Another critical solution is the enforcement of stronger regulations against illegal logging and land clearing. Governments can implement stricter laws and penalties for illegal activities while also investing in monitoring systems to track
+                     deforestation in real-time. Additionally, supporting community-based forest management empowers local populations to take an active role in protecting their forests.</p>
+              </div>
+          </div>
+          <div class="col-md-7">
+              <img src="https://tellmethegoodnews.com/wp-content/uploads/2023/08/egm-website-template-22.png" class="img-fluid card-images" alt="...">
+          </div>
+      </div>
+  </div>
+</div><br>
+
+<div class="container text-center bg-color mt-3">
+  <div class="p-2">
+    <h2>How you can help</h2>
+    <p>Join us in the journey towards climate justice by taking simple actions such as signing petitions, and joining climate campaigns. Together, we can create a ripple of change that will positively impact future generations.</p>
+  </div>
+</div>
+
+
+
+
+<!--How can you help-->
+<div class="mt-1">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://img.freepik.com/premium-vector/group-people-plant-trees-park-reforestation-ecology-concept-taking-care-planet-earth-day_693602-476.jpg" alt="Protecting Our Climate" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Promote Reforestation and Tree Planting</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://www.shutterstock.com/image-vector/sustainable-agriculture-future-land-management-260nw-2398310005.jpg" alt="Saving Our Oceans" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Support Sustainable Land-Use Practices</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="">
+                <img src="https://cdn-icons-png.flaticon.com/512/2191/2191440.png" alt="Ending Plastic Pollution" class="img-size card-img-top mx-auto d-block rounded-circle">
+                <div class="card-body">
+                    <h5 class="card-title text-size m-0"></h5>
+                    <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Strengthen Forest Protection Policies</a>
+                </div>
+            </div>
+        </div>
+
+          <div class="col-md-3">
+              <div class="">
+                  <img src="https://www.shutterstock.com/image-vector/ecovolunteers-planting-trees-park-group-600nw-2138236147.jpg" alt="Co-powering Communities" class="img-size rounded-circle">
+                  <div class="card-body">
+                      <h5 class="card-title text-size m-0"></h5>
+                      <a href="join.html" class="text-dark fw-semibold text-decoration-underline text-size">Raise Awareness and Community Involvement</a>
+                  </div>
+              </div>
+          </div>
+      </div>        
+  </div>
+</div><br><br>
+
+
+
+
+
+<!-- Sign UP -->
+<div class="container-sm">
+  <div class="card shadow-sm rounded p-3"> <!-- Adjusted padding for the card -->
+      <h4 class="text-center mb-1">Together we are making change</h4>
+      <p class="text-center text-muted mb-2">
+        Sign up for campaign update and action alerts
+      </p>
+      <form id="subscribeForm">
+        <div class="row gx-2">
+          <div class="col-12 col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-sm" id="fname" placeholder="Enter first name" required>
+              <label for="fname">First Name</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-sm" id="lname" placeholder="Enter last name" required>
+              <label for="lname">Last Name</label>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <div class="form-floating">
+              <input type="email" class="form-control form-control-sm" id="email" placeholder="name@gmail.com" required>
+              <label for="email">Email (Gmail only)</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="w-100 btn-sm py-2">Subscribe</button>
+          </div>
+        </div>
+      </form>
+      <div id="message" class="mt-3 text-center"></div>
+  </div>
+</div><br>
+
+
+
+<!-- Footer -->
+<footer class="footer text-dark text-center">
+  <div class="container py-3">
+      <div class="row">
+          <!-- Company Column -->
+          <div class="col-md-4">
+              <h6>ECO KALIKASAN HUB</h6>
+              <div class="logo-container">
+                <img src="img/logo only.png" alt="Flood" class="img-fluid rounded logo-footer">
+            </div>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="col-md-4">
+              <h6>CONTACT</h6>
+              <ul class="list-unstyled">
+                  <li><i class="fas fa-home mr-"></i> Ilocos Sur</li>
+                  <li><i class="fas fa-envelope mr-2"></i> ekh@member.com</li>
+                  <li><i class="fas fa-phone mr-2"></i> + 0955 163 5955</li>
+
+              </ul>
+          </div>
+
+          <!-- Social Icons Section -->
+          <div class="col-md-4">
+            <h6>SOCIAL</h6>
+            <ul class="list-unstyled">
+                <li><i class="fab fa-facebook-f mr-2"></i> Facebook</li>
+                <li><i class="fab fa-google mr-2"></i> Google</li>
+                <li><i class="fab fa-instagram mr-2"></i> Instagram</li>
+                <li><i class="fab fa-twitter mr-2"></i> Twitter</li>
+            </ul>
+        </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
